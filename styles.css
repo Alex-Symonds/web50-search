@@ -26,14 +26,6 @@ body {
   margin: 220px auto 0px;
   text-align: center;
 }
-#logo-container span {
-  color: #4285f4;
-  font-size: 16px;
-  font-family: Roboto, RobotoDraft, Arial, sans-serif;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-}
 
 #sb-container {
   margin-top: 22px;
@@ -84,6 +76,73 @@ body {
   background-color: #f8f9fa;
   border: 1px solid #dadce0;
   color: #202124;
+}
+
+/* Image search */
+#logo-container-img {
+  position: relative;
+  width: 244px;
+  margin: 139px auto 0px;
+  text-align: center;
+}
+#logo-container-img span {
+  color: #4285f4;
+  font-size: 14px;
+  font-family: Roboto, RobotoDraft, Arial, sans-serif;
+  position: absolute;
+  bottom: 2px;
+  right: 6px;
+}
+
+#sb-container-img {
+  margin-top: 16px;
+  text-align: center;
+}
+
+#search-bar-img {
+  position: relative;
+  margin: 0 auto;
+  height: 39px;
+  width: 44.4%;
+  max-width: 477px;
+  border-radius: 24px;
+  border: 1px solid #dfe1e5;
+}
+#search-bar-img:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+#search-bar-img:focus, #search-bar-img input:focus {
+  outline: none;
+}
+#search-bar-img input {
+  font-family: Roboto, RobotoDraft, Arial, sans-serif;
+  display: flex;
+  font-size: 14px;
+  top: 0;
+  margin-left: 34px;
+  height: 37px;
+  width: 72%;
+  padding: 0 8px;
+  border: none;
+  background: transparent;
+}
+
+#left-magnifying-glass {
+  position: absolute;
+  left: 12px;
+  top: 8px;
+}
+
+#camera-icon-container {
+  position: absolute;
+  right: 53px;
+  top: 8px;
+}
+
+#hidden-button {
+  display: none;
 }
 
 /* Advanced Search only */
@@ -151,17 +210,17 @@ h3 {
   background-image: -o-linear-gradient(top, #4d90fe, #4787ed);
   background-image: linear-gradient(top, #4d90fe, #4787ed);
   border: 1px solid #3079ed;
+  border-radius: 2px;
   color: #fff;
-  padding: 0 12px;
   font-size: 11px;
   font-weight: bold;
   text-align: center;
   white-space: nowrap;
-  border-radius: 2px;
+  padding: 0 12px;
   user-select: none;
   line-height: 100%;
   height: 30px;
-  min-width: 120px;
+  width: 120px;
   outline: none;
 }
 #adv-form input[type=submit]:hover {
