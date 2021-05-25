@@ -154,6 +154,7 @@ body {
   display: inline-block;
 }
 .tooltip .tooltip-text {
+  -moz-transition-delay: 0.15s;
   visibility: hidden;
   width: 110px;
   border: 1px solid white;
@@ -173,6 +174,7 @@ body {
   box-shadow: 0 1px 5px -1px rgba(32, 33, 36, 0.28);
 }
 .tooltip .tooltip-triangle {
+  -moz-transition-delay: 0.15s;
   visibility: hidden;
   border: 1px solid white;
   width: 0;
@@ -187,6 +189,7 @@ body {
 }
 .tooltip:hover .tooltip-text, .tooltip:hover .tooltip-triangle {
   visibility: visible;
+  -moz-transition-delay: 0.15s;
 }
 
 /* Advanced Search only */

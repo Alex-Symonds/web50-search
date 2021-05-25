@@ -1,5 +1,6 @@
 $adv_leftborder: 45px;
 $adv_button_mainColour: #4d90fe;
+$tooltip-delay: 0.15s;
 
 body{
     font-family: Arial,sans-serif;
@@ -81,7 +82,6 @@ body{
     }
 }
 
-
 #left-magnifying-glass-hp{
     position: absolute;
     left: 12px;
@@ -151,9 +151,6 @@ body{
     }
 }
 
-
-
-
 #left-magnifying-glass{
     position: absolute;
     left: 12px;
@@ -176,6 +173,7 @@ body{
     display: inline-block;
 
     .tooltip-text {
+        -moz-transition-delay: $tooltip-delay;
         visibility: hidden;
         width: 110px;
         border: 1px solid white;
@@ -199,6 +197,7 @@ body{
     }
 
     .tooltip-triangle{
+        -moz-transition-delay: $tooltip-delay;
         visibility: hidden;
         border: 1px solid white;
 
@@ -216,6 +215,7 @@ body{
   
     &:hover .tooltip-text, &:hover .tooltip-triangle {
         visibility: visible;
+        -moz-transition-delay: $tooltip-delay;
     }
 }
 
