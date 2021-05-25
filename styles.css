@@ -20,34 +20,41 @@ body {
   text-decoration: underline;
 }
 
-#logo-container {
+.logo-container {
   position: relative;
-  width: 272px;
-  margin: 220px auto 0px;
   text-align: center;
 }
 
-#sb-container {
+.search-bar {
+  border-radius: 24px;
+  border: 1px solid #dfe1e5;
+}
+.search-bar:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+.search-bar:focus {
+  outline: none;
+}
+
+/* Homepage */
+#logo-container-hp {
+  width: 272px;
+  margin: 220px auto 0px;
+}
+
+#sb-container-hp {
   margin-top: 22px;
   text-align: center;
 }
 
-#search-bar {
+#search-bar-hp {
   height: 38px;
   width: 82%;
   max-width: 544px;
   font-size: 14px;
   padding: 3px 20px;
-  border-radius: 24px;
-  border: 1px solid #dfe1e5;
-}
-#search-bar:hover {
-  background-color: #fff;
-  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
-  border-color: rgba(223, 225, 229, 0);
-}
-#search-bar:focus {
-  outline: none;
 }
 
 #button-container {
@@ -80,10 +87,8 @@ body {
 
 /* Image search */
 #logo-container-img {
-  position: relative;
   width: 244px;
   margin: 139px auto 0px;
-  text-align: center;
 }
 #logo-container-img span {
   color: #4285f4;
@@ -105,16 +110,6 @@ body {
   height: 39px;
   width: 44.4%;
   max-width: 477px;
-  border-radius: 24px;
-  border: 1px solid #dfe1e5;
-}
-#search-bar-img:hover {
-  background-color: #fff;
-  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
-  border-color: rgba(223, 225, 229, 0);
-}
-#search-bar-img:focus, #search-bar-img input:focus {
-  outline: none;
 }
 #search-bar-img input {
   font-family: Roboto, RobotoDraft, Arial, sans-serif;
@@ -127,6 +122,9 @@ body {
   padding: 0 8px;
   border: none;
   background: transparent;
+}
+#search-bar-img input:focus {
+  outline: none;
 }
 
 #left-magnifying-glass {
@@ -143,6 +141,27 @@ body {
 
 #hidden-button {
   display: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.tooltip:hover .tooltip-text {
+  visibility: visible;
 }
 
 /* Advanced Search only */
