@@ -155,26 +155,27 @@ body {
 }
 .tooltip .tooltip-text {
   -moz-transition-delay: 0.15s;
+  transition-delay: 0.15s;
   visibility: hidden;
-  width: 110px;
-  border: 1px solid white;
-  background-color: #2d2d2d;
-  color: #fff;
-  text-align: center;
-  padding: 9px 0 5px 0;
-  outline: none;
-  font-size: 11px;
-  font-weight: bold;
-  font-family: Roboto, RobotoDraft, Arial, sans-serif;
-  /* Position the tooltip */
   position: absolute;
   top: 38px;
   right: -43px;
   z-index: 1;
+  width: 110px;
+  padding: 9px 0 5px 0;
+  text-align: center;
+  border: 1px solid white;
+  background-color: #2d2d2d;
   box-shadow: 0 1px 5px -1px rgba(32, 33, 36, 0.28);
+  outline: none;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: Roboto, RobotoDraft, Arial, sans-serif;
 }
 .tooltip .tooltip-triangle {
   -moz-transition-delay: 0.15s;
+  transition-delay: 0.15s;
   visibility: hidden;
   border: 1px solid white;
   width: 0;
@@ -190,6 +191,7 @@ body {
 .tooltip:hover .tooltip-text, .tooltip:hover .tooltip-triangle {
   visibility: visible;
   -moz-transition-delay: 0.15s;
+  transition-delay: 0.15s;
 }
 
 /* Advanced Search only */
