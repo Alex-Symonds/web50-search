@@ -34,7 +34,7 @@ body {
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
   border-color: rgba(223, 225, 229, 0);
 }
-.search-bar:focus {
+.search-bar input:focus {
   outline: none;
 }
 
@@ -135,8 +135,9 @@ body {
 
 #camera-icon-container {
   position: absolute;
-  right: 53px;
+  right: 54px;
   top: 8px;
+  outline: none;
 }
 
 #hidden-button {
@@ -146,21 +147,39 @@ body {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
 }
 .tooltip .tooltip-text {
   visibility: hidden;
-  width: 120px;
-  background-color: black;
+  width: 100px;
+  border: 1px solid white;
+  background-color: #2d2d2d;
   color: #fff;
   text-align: center;
-  border-radius: 6px;
   padding: 5px 0;
+  outline: none;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: Roboto, RobotoDraft, Arial, sans-serif;
   /* Position the tooltip */
   position: absolute;
+  top: 35px;
+  right: -38px;
   z-index: 1;
 }
-.tooltip:hover .tooltip-text {
+.tooltip .tooltip-triangle {
+  visibility: hidden;
+  border: 1px solid white;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #2d2d2d;
+  position: absolute;
+  top: 32px;
+  right: 5px;
+  z-index: 2;
+}
+.tooltip:hover .tooltip-text, .tooltip:hover .tooltip-triangle {
   visibility: visible;
 }
 
