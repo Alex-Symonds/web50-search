@@ -41,11 +41,11 @@ body {
 .search-bar input {
   font-family: Roboto, RobotoDraft, Arial, sans-serif;
   display: flex;
-  font-size: 14px;
+  font-size: 16px;
   top: 0;
-  height: 45px;
+  height: 44px;
   width: 72%;
-  padding: 0 8px;
+  padding: 0px 8px;
   border: none;
   background: transparent;
 }
@@ -128,7 +128,7 @@ body {
   width: 534px;
 }
 #search-bar-img input {
-  margin-left: 34px;
+  margin-left: 39px;
   width: 72%;
 }
 
